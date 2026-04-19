@@ -77,16 +77,19 @@ function HeroSection({ onCalculatorClick }) {
     <div className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white">
       <div className="max-w-6xl mx-auto px-6 py-20">
         <div className="max-w-3xl">
-          <h1 className="text-5xl font-bold leading-tight mb-6">
-            The Four Pillars
+          <p className="text-lg text-blue-300 mb-4 font-semibold uppercase tracking-wide">
+            The problem
+          </p>
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
+            84% of federal revenue comes from taxing human labor. AI is replacing that labor.
           </h1>
           <p className="text-2xl text-blue-200 mb-4 font-light">
-            A New American Economic Framework
+            The Four Pillars — A New American Economic Framework
           </p>
           <p className="text-lg text-slate-300 mb-8 leading-relaxed max-w-2xl">
-            Eliminate income tax. Replace Social Security with personal investment accounts.
-            Guarantee every citizen a $25,000 floor. Fund it through consumption tax and
-            automation tax. Let the system grow itself.
+            Tax automation instead of labor. Eliminate income tax. Guarantee every citizen
+            a $25,000 floor. Replace Social Security with personal investment accounts you own.
+            Full federal balance sheet, Monte Carlo validated, open source.
           </p>
           <div className="flex flex-wrap gap-4">
             <button

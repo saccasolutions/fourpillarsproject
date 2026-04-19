@@ -9,7 +9,7 @@ const fmt = (n) => {
 };
 
 // ─── Calculator Logic ───
-function calculate(income, filingStatus, numChildren, hasEmployerInsurance) {
+function calculate(income, filingStatus, numChildren, hasEmployerInsurance, creativeTier, civicTier) {
   const adults = filingStatus === "married" ? 2 : 1;
 
   // Current system
@@ -32,7 +32,14 @@ function calculate(income, filingStatus, numChildren, hasEmployerInsurance) {
   }
 
   const childPillar4 = numChildren >= 3 ? 15000 : numChildren >= 2 ? 10000 : numChildren === 1 ? 6000 : 0;
-  const gross = income + totalFloor + childPillar4;
+
+  // Pillar 2 — Creative
+  const creativePillar = creativeTier === "emerging" ? 3000 : creativeTier === "active" ? 8000 : creativeTier === "professional" ? 15000 : 0;
+
+  // Pillar 3 — Civic
+  const civicPillar = civicTier === "participating" ? 2500 : civicTier === "active" ? 8000 : civicTier === "leader" ? 14000 : 0;
+
+  const gross = income + totalFloor + childPillar4 + creativePillar + civicPillar;
   const mandatory401k = income * 0.10;
   const spending = gross - mandatory401k;
   const taxableSpending = spending * 0.70;
@@ -57,6 +64,8 @@ function calculate(income, filingStatus, numChildren, hasEmployerInsurance) {
     fourPillars: {
       floor: totalFloor,
       childPillar4,
+      creativePillar,
+      civicPillar,
       gross,
       mandatory401k,
       vatPaid,
@@ -250,9 +259,11 @@ function CalculatorSection({ calculatorRef }) {
   const [filing, setFiling] = useState("single");
   const [children, setChildren] = useState(0);
   const [insured, setInsured] = useState(true);
+  const [creativeTier, setCreativeTier] = useState("none");
+  const [civicTier, setCivicTier] = useState("none");
   const [showDetails, setShowDetails] = useState(false);
 
-  const result = calculate(income, filing, children, insured);
+  const result = calculate(income, filing, children, insured, creativeTier, civicTier);
   const r = result.fourPillars;
   const c = result.current;
 
@@ -319,6 +330,37 @@ function CalculatorSection({ calculatorRef }) {
                 <span className="text-sm text-slate-700">I have employer-provided health insurance</span>
               </label>
             </div>
+
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <label className="block text-sm font-medium text-slate-700 mb-2">Creative Work</label>
+                <select
+                  value={creativeTier}
+                  onChange={(e) => setCreativeTier(e.target.value)}
+                  className="w-full border border-slate-300 rounded-lg px-3 py-2 text-slate-900 bg-white text-sm"
+                >
+                  <option value="none">None</option>
+                  <option value="emerging">Emerging ($3K/yr)</option>
+                  <option value="active">Active ($8K/yr)</option>
+                  <option value="professional">Professional ($15K/yr)</option>
+                </select>
+                <p className="text-xs text-slate-400 mt-1">Arts, music, writing, innovation</p>
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-slate-700 mb-2">Civic Contribution</label>
+                <select
+                  value={civicTier}
+                  onChange={(e) => setCivicTier(e.target.value)}
+                  className="w-full border border-slate-300 rounded-lg px-3 py-2 text-slate-900 bg-white text-sm"
+                >
+                  <option value="none">None</option>
+                  <option value="participating">Participating ($2.5K/yr)</option>
+                  <option value="active">Active ($8K/yr)</option>
+                  <option value="leader">Leader ($14K/yr)</option>
+                </select>
+                <p className="text-xs text-slate-400 mt-1">Volunteering, mentoring, community service</p>
+              </div>
+            </div>
           </div>
 
           {/* Results */}
@@ -349,6 +391,12 @@ function CalculatorSection({ calculatorRef }) {
                 <p className="text-sm text-slate-600">Floor: <span className="font-semibold text-green-600">+{fmt(r.floor)}</span></p>
                 {r.childPillar4 > 0 && (
                   <p className="text-sm text-slate-600">Family: <span className="font-semibold text-green-600">+{fmt(r.childPillar4)}</span></p>
+                )}
+                {r.creativePillar > 0 && (
+                  <p className="text-sm text-slate-600">Creative: <span className="font-semibold text-green-600">+{fmt(r.creativePillar)}</span></p>
+                )}
+                {r.civicPillar > 0 && (
+                  <p className="text-sm text-slate-600">Civic: <span className="font-semibold text-green-600">+{fmt(r.civicPillar)}</span></p>
                 )}
                 <p className="text-sm text-slate-600">VAT: <span className="font-semibold text-red-600">−{fmt(r.vatPaid)}</span></p>
                 <p className="text-lg font-bold text-slate-900 mt-2 pt-2 border-t border-blue-200">

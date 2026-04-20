@@ -3,13 +3,13 @@
 **Robert DeMaria**
 Sacca Solutions | robert@saccasolutions.com
 
-**Working Paper — April 2026**
+**Working Paper v2.0 — April 2026**
 
 ---
 
 ## Abstract
 
-This paper proposes a comprehensive restructuring of the American fiscal and social safety net: the Four Pillars framework. The framework eliminates federal income tax and employee payroll contributions, replaces them with a 20% value-added tax, a 50% automation tax on net labor savings from artificial intelligence and robotics, and restored corporate tax rates, while providing every adult US citizen a guaranteed income floor of $25,000 per year (phased out above $80,000 in earnings). Beyond the floor, the framework recognizes four dimensions of societal contribution — Economic (market employment), Creative (arts, innovation, culture), Civic (volunteering, community service), and Family (caregiving, child-rearing) — with tiered payments for the latter three. Social Security is replaced by mandatory personal investment accounts seeded at birth. The framework produces $7.69 trillion in annual federal revenue against $9.82 trillion in total outflows, yielding an initial gap of $2.13 trillion that narrows to surplus within a decade as automation tax revenue grows from $0.71 trillion to $2.84 trillion. Monte Carlo simulation (2,000 iterations) shows median budget gap narrowing from −$1.97T in Year 1 to −$0.55T by Year 10, with 34% probability of surplus by Year 10 and 90th-percentile surplus achievable by Year 6. This paper presents the complete framework design, federal balance sheet, computational modeling results, sensitivity analyses, stress tests, international comparisons, and a phased implementation plan.
+This paper proposes a comprehensive restructuring of the American fiscal and social safety net: the Four Pillars framework. The framework eliminates federal income tax and employee payroll contributions, replaces them with a 20% value-added tax, a 50% automation tax on net labor savings from artificial intelligence and robotics, and restored corporate tax rates, while providing every adult US citizen a guaranteed income floor of $25,000 per year (phased out above $80,000 in earnings). Beyond the floor, the framework recognizes four dimensions of societal contribution — Economic (market employment), Creative (arts, innovation, culture), Civic (volunteering, community service), and Family (caregiving, child-rearing) — with tiered payments for the latter three. Social Security is replaced by mandatory personal investment accounts seeded at birth. The framework produces $7.69 trillion in annual federal revenue against $9.82 trillion in total outflows, yielding an initial gap of $2.13 trillion that narrows to surplus within a decade as automation tax revenue grows from $0.71 trillion to $2.84 trillion. Monte Carlo simulation (2,000 iterations) shows median budget gap narrowing from −$1.97T in Year 1 to −$0.55T by Year 10, with 56% probability of surplus by Year 10 (extended simulation: 70% by Year 14, 80% by Year 20) and 90th-percentile surplus achievable by Year 6. This paper presents the complete framework design, federal balance sheet, computational modeling results, sensitivity analyses, stress tests, international comparisons, and a phased implementation plan.
 
 **Keywords:** universal basic income, automation tax, value-added tax, fiscal policy, income tax elimination, Social Security reform, AI displacement, negative income tax
 
@@ -31,9 +31,11 @@ This paper proposes a fundamentally different approach. Rather than layering a U
 
 ### 2.1 The Income Floor
 
-Every adult US citizen receives a guaranteed annual income floor of up to $25,000. The floor is structured as a negative income tax variant: individuals earning below $30,000 receive the full amount, with the payment reducing by $0.50 for every $1 earned above $30,000, fully phasing out at $80,000 in annual earnings. Approximately 90% of American adults (232 million of 258 million) receive some payment under this structure. The phase-out design was optimized across seven alternative structures (Section 5) and represents the best balance of cost, coverage, and work incentive preservation.
+Every adult US citizen receives a guaranteed annual income floor of up to $25,000. To be clear: the floor is a foundation, not a ceiling. A median worker earning $45,000 takes home approximately $55,500 under the Four Pillars framework (salary plus partial floor minus VAT), compared to $34,050 under the current system. The $25,000 floor is most significant for those with zero market income; for most workers, the combination of eliminated income tax, eliminated FICA, and partial floor payment produces take-home pay well above $25,000. The floor is structured as a negative income tax variant: individuals earning below $30,000 receive the full amount, with the payment reducing by $0.50 for every $1 earned above $30,000, fully phasing out at $80,000 in annual earnings. Approximately 90% of American adults (232 million of 258 million) receive some payment under this structure. The phase-out design was optimized across seven alternative structures (Section 5) and represents the best balance of cost, coverage, and work incentive preservation.
 
 The floor is not indexed to inflation. This is a deliberate stabilization mechanism: if prices rise, the floor's real value decreases slightly, dampening demand-pull inflation automatically. Floor scaling decisions ($25K → $28K → $30K) are discretionary, enacted only when revenue growth supports increased payments.
+
+The income floor does not replace disability benefits (SSDI), Medicaid, or specialized care programs. Individuals receiving disability support continue to receive those benefits in addition to the floor. The floor replaces only general income support programs (SNAP, TANF, SSI) that provide less than $25,000 annually — recipients are made whole or better off by the transition.
 
 Payments are monthly ($2,083 maximum). Eligibility is limited to US citizens, verified through existing federal databases. Incarcerated individuals receive reduced payments with mandatory allocations to child support, restitution, and a trust fund accessible upon release.
 
@@ -101,7 +103,7 @@ The initial gap is $2.13 trillion, compared to the current federal deficit of $1
 
 The automation tax grows as AI displacement increases. The model assumes displacement rising from 10% to 30% of labor tasks over ten years, growing automation tax revenue from $0.71 trillion to $2.84 trillion — an increase of $2.13 trillion that alone closes the gap.
 
-GDP growth driven by increased consumer spending (258 million adults with guaranteed purchasing power) expands the VAT base, corporate profits, and investment income. Monte Carlo simulation (Section 6) quantifies the probability distribution of this trajectory.
+GDP growth driven by increased consumer spending (258 million adults with guaranteed purchasing power) expands the VAT base, corporate profits, and investment income. Monte Carlo simulation (Section 6) quantifies the probability distribution of this trajectory, showing 56% probability of surplus by Year 10 and 80% by Year 20.
 
 ### 3.4 Revenue Split
 
@@ -159,7 +161,7 @@ A Monte Carlo simulation with 2,000 iterations models 10-year revenue trajectori
 
 Median revenue grows from $8.00 trillion in Year 1 to $11.82 trillion by Year 10. Median outflows grow from $9.97 trillion to $12.17 trillion (driven primarily by healthcare inflation and federal operations growth). The median gap narrows from −$1.97 trillion to −$0.55 trillion.
 
-The probability of achieving surplus rises steadily: 0% in Years 1-2, 4.2% by Year 4, 10.1% by Year 6, 17.4% by Year 7, and 34.4% by Year 10. At the 75th percentile, surplus is achieved by Year 9 (+$0.02 trillion). At the 90th percentile, surplus is achieved by Year 6 with a Year 10 surplus of $1.86 trillion.
+The probability of achieving surplus rises steadily: 0% in Years 1-2, 4.2% by Year 4, 10.1% by Year 6, 17.4% by Year 7, and 55.7% by Year 10. At the 75th percentile, surplus is achieved by Year 9 (+$0.02 trillion). At the 90th percentile, surplus is achieved by Year 6 with a Year 10 surplus of $1.86 trillion.
 
 The worst-case scenario (10th percentile) shows a Year 10 gap of −$1.75 trillion — larger than the current deficit but not catastrophically so, and notably better than the 10th-percentile trajectory of the current fiscal system (which has no structural path to improvement).
 
@@ -168,6 +170,34 @@ The worst-case scenario (10th percentile) shows a Year 10 gap of −$1.75 trilli
 Automation tax is the dominant driver of uncertainty. Simulations with above-median automation tax revenue show an average Year 10 gap of +$0.40 trillion (surplus), while below-median simulations show −$0.79 trillion. The $1.18 trillion difference underscores that the framework's fiscal viability depends on continued AI adoption — a trend that all evidence suggests is accelerating.
 
 GDP growth is the second major driver. Higher GDP growth improves all revenue sources simultaneously (VAT, corporate tax, employment-linked FICA) and produces an approximately $1.0-1.5 trillion difference in Year 10 outcomes between high and low GDP scenarios.
+
+
+### 6.4 Extended 20-Year Projections
+
+The baseline Monte Carlo was extended to a 20-year horizon using identical parameter distributions. The longer time frame reveals the power of the automation tax compounding loop and GDP-driven VAT growth:
+
+| Year | Median Gap | P(Surplus) | Automation Tax | VAT Revenue |
+|------|-----------|------------|----------------|-------------|
+| 1 | −$1.97T | 0.0% | $0.57T | $4.12T |
+| 5 | −$0.94T | 13.3% | $1.02T | $4.86T |
+| 10 | +$0.21T | 55.7% | $1.71T | $5.44T |
+| 14 | +$1.34T | 70.9% | $2.32T | $5.94T |
+| 20 | +$3.73T | 80.5% | $3.42T | $6.77T |
+
+The VAT-GDP compounding loop is the underappreciated second engine: VAT revenue grows from $4.1 trillion to $6.8 trillion purely from GDP growth, independent of the automation tax. This $2.7 trillion increase provides a reliable revenue floor even in scenarios where automation adoption is slower than expected.
+
+### 6.5 Land Value Tax Scenario
+
+Adding a 1% land value tax (approximately $240 billion per year, based on Lincoln Institute estimates of total US land value at $24 trillion) accelerates every fiscal milestone by approximately two years:
+
+| Milestone | Without LVT | With LVT |
+|-----------|-------------|----------|
+| 25% surplus probability | Year 7 | Year 6 |
+| 50% surplus probability | Year 10 | Year 9 |
+| 70% surplus probability | Year 14 | Year 12 |
+| 80% surplus probability | Year 20 | Year 17 |
+
+A land value tax is recommended as a complementary revenue source. It is difficult to offshore, impossible to automate away, and enjoys broad support across the political spectrum (endorsed historically by economists from Adam Smith to Milton Friedman to modern Georgists). It is not included in the baseline projections to maintain fiscal conservatism, but its addition would meaningfully improve the framework's fiscal trajectory.
 
 ---
 
@@ -263,7 +293,31 @@ National implementation should be preceded by a 3-5 year federal demonstration p
 
 ## 13. Limitations and Open Questions
 
-Several areas require additional research and refinement. The automation tax enforcement mechanism needs detailed specification — how are "net labor savings" measured and verified? International tax competition may pressure the 28% corporate rate downward if other nations offer lower rates, though the framework's consumer market strength provides countervailing leverage. The 401(k) transition's sensitivity to investment returns warrants more rigorous stochastic modeling, particularly for workers entering personal accounts during a prolonged bear market. The Pillar 2-4 measurement system, while designed around existing data, requires operational testing before national deployment. And the framework's interaction with state and local tax systems — particularly in states with their own income taxes — requires separate analysis.
+Several areas require additional research and refinement.
+
+### 13.1 Automation Tax Enforcement
+
+Community feedback identified automation tax measurement as the framework's primary implementation vulnerability. How are "net labor savings" measured, and how do you prevent gaming?
+
+The proposed enforcement approach uses a hybrid mechanism. The primary instrument is a **revenue tax with labor deductions**: companies pay a flat rate (approximately 2.45%) on gross revenue minus total labor costs. This is simple to audit using existing financial reporting, difficult to game, and automatically taxes capital-intensive operations more heavily. However, modeling shows a fixed-rate revenue tax only reaches $1.1 trillion by Year 10 (versus the $2.84 trillion target), because the rate cannot grow with displacement without legislative action.
+
+The secondary instrument is the **automation tax proper**, applied to companies that execute large documented workforce reductions (layoffs exceeding 5% of workforce within 12 months) while maintaining or increasing output. These events are already reported through WARN Act filings, SEC disclosures, and unemployment insurance claims. The tax is calculated as 50% of demonstrated labor cost savings: (pre-reduction labor costs − post-reduction labor costs) × 50%.
+
+Together, the revenue tax provides a simple, broad-based floor that captures gradual automation, while the automation tax captures large discrete displacement events. Industry-specific baselines, published annually by the Bureau of Labor Statistics, establish the labor-to-revenue ratio norms that define expected labor intensity by sector. Companies falling significantly below their sector baseline face additional reporting requirements.
+
+Anti-gaming provisions include: consolidated reporting across subsidiaries and contractors, three-year lookback periods for workforce changes, and anti-fragmentation rules preventing companies from splitting operations to stay below reporting thresholds.
+
+### 13.2 Border Adjustment Mechanism
+
+Offshoring is the second most cited vulnerability. Companies could theoretically move operations abroad to avoid both the automation tax and the revenue tax.
+
+The framework addresses this through a border adjustment mechanism modeled on the EU Carbon Border Adjustment Mechanism (CBAM). Imports from companies that would be subject to the automation tax domestically face an equivalent tariff calculated from the exporting company's labor-to-revenue ratio relative to the US industry baseline. This ensures that moving production offshore does not create a tax advantage.
+
+The mechanism leverages existing customs infrastructure and WTO-compatible border adjustment principles (the same legal framework that supports carbon border adjustments). Implementation requires bilateral agreements with major trading partners, phased in over 3-5 years concurrent with the automation tax rollout.
+
+### 13.3 Remaining Open Questions
+
+Beyond enforcement and offshoring, several areas require continued research. The 401(k) transition's sensitivity to investment returns warrants more rigorous stochastic modeling, particularly for workers entering personal accounts during a prolonged bear market. The Pillar 2-4 measurement system, while designed around existing data, requires operational testing before national deployment. And the framework's interaction with state and local tax systems — particularly in states with their own income taxes — requires separate analysis.
 
 The $2.13 trillion initial gap, while comparable to the current deficit, is larger in absolute terms. The framework's claim of fiscal improvement rests entirely on the automation tax growth trajectory. If AI displacement proceeds more slowly than modeled (below the 10th percentile of Monte Carlo outcomes), the gap would persist or widen. However, the same AI capabilities that would slow displacement also reduce the urgency of the framework — the system is designed for a world in which automation is aggressively replacing human labor.
 
@@ -324,5 +378,5 @@ All computational models (Pillar 1 calibration, Monte Carlo simulation, floor op
 ---
 
 *Corresponding author: Robert DeMaria, robert@saccasolutions.com*
-*Working Paper v1.0 — April 2026*
+*Working Paper v2.0 — April 2026*
 *All figures in 2026 dollars unless otherwise noted.*

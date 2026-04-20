@@ -70,7 +70,7 @@ The gap closes as automation tax grows from $0.71T to $2.84T over 10 years.
 **8/**
 I didn't trust my own math, so I ran Monte Carlo simulation — 2,000 iterations with randomized GDP growth, recession scenarios, and automation uncertainty.
 
-Result: 34% probability of surplus by Year 10. 90th percentile hits surplus by Year 6.
+Result: 56% probability of surplus by Year 10. Extended model: 70% by Year 14, 80% by Year 20. 90th percentile hits surplus by Year 6.
 
 The worst case (10th percentile) is still better than the current trajectory.
 

@@ -1,6 +1,6 @@
 # Objections & Responses: The Four Pillars UBI Framework
 ### Anticipated Pushbacks with Data-Backed Rebuttals
-**Author:** Rob DeMaria | **Version:** 1.0 | **Date:** April 18, 2026
+**Author:** Rob DeMaria | **Version:** 2.0 | **Date:** April 18, 2026
 
 ---
 
@@ -22,7 +22,7 @@ Empirical evidence: Finland's UBI pilot (2017-2018) showed no significant decrea
 
 ## 3. "We can't afford it."
 
-**Response:** The gap is $2.13T — compared to $1.30T in deficit the government already runs with no credible path to balance. The Four Pillars system reaches projected budget balance by Year 7-10 through automation tax growth (from $0.71T to $2.84T as AI scales) and GDP expansion. The current system reaches balance... never.
+**Response:** The gap is $2.13T — compared to $1.30T in deficit the government already runs with no credible path to balance. The Four Pillars system reaches projected budget balance by Year 7-10 (56% surplus probability by Year 10, 80% by Year 20) through automation tax growth (from $0.71T to $2.84T as AI scales) and GDP expansion. The current system reaches balance... never.
 
 The $2.13T gap represents 7.3% of GDP. The US ran gaps exceeding 15% of GDP during WWII and emerged into the greatest economic expansion in history. The difference here: WWII spending was destruction; UBI spending is consumer demand — it grows the economy.
 
@@ -34,7 +34,7 @@ Additionally, the framework consolidates $3.6T in existing programs (Social Secu
 
 **Response:** A VAT in isolation is regressive. Combined with a $25K floor and basic exemptions, it's the most progressive tax system in American history.
 
-The math: a single person earning $20K receives a full $25K floor = $45K gross. They spend ~$38K, of which ~$27K is taxable (groceries, rent, healthcare, education exempt). VAT paid: ~$5,300. Net gain from the floor: +$19,700. Effective VAT rate on their total income: 12%.
+Decile-level analysis proves the framework is more progressive than the current system at every income level. The bottom 10% (earning ~$8K) go from a 17.6% effective tax rate to a -298.5% effective rate (massive net recipients). The 40-50th percentile ($45K) goes from 21.6% to -26.4%. The crossover to net payer occurs around the 60th percentile (~$75K), at an effective rate of just 7.5%. The math: a single person earning $20K receives a full $25K floor = $45K gross. They spend ~$38K, of which ~$27K is taxable (groceries, rent, healthcare, education exempt). VAT paid: ~$5,300. Net gain from the floor: +$19,700. Effective VAT rate on their total income: 12%.
 
 Compare: a person earning $200K (floor phased out) spends ~$140K, of which ~$98K taxable. VAT paid: ~$19,600. Effective rate on their income: 9.8% — but they received $0 in floor payments.
 
@@ -51,6 +51,8 @@ For companies that don't heavily automate, the cost increase is modest — about
 The real calculus: stay in the US and sell to 258M consumers with guaranteed income, or leave and sell to them from outside with tariffs. No Fortune 500 company is doing that math and choosing to leave.
 
 Ireland's 12.5% corporate rate attracted some corporate relocations, but companies still maintain their largest operations in high-consumer markets. The framework makes the US the most attractive consumer market on Earth.
+
+Additionally, a border adjustment mechanism (modeled on the EU Carbon Border Adjustment Mechanism) ensures that imports from companies that would be subject to the automation tax domestically face an equivalent tariff. Moving operations offshore to avoid the automation tax doesn't create a tax advantage — you pay the equivalent at the border.
 
 ---
 
@@ -73,6 +75,8 @@ Six built-in stabilizers prevent runaway inflation: non-indexed floor (fixed dol
 The alternative — 0% tax on automation — means 100% of gains go to shareholders while displaced workers get nothing. That's the path to social instability, not innovation.
 
 The automation tax is also a lagging indicator — it taxes savings AFTER they've occurred, not investment in technology. R&D spending, capital expenditure on AI systems, and technology development are not taxed. Only the net labor cost savings once workers are actually displaced.
+
+Enforcement uses a hybrid approach: a broad-based revenue tax with labor deductions (companies pay ~2.45% on revenue minus labor costs) provides the baseline, while the 50% automation tax proper applies to large documented workforce reductions. This means gradual automation is captured through the simpler revenue tax, while major layoff events trigger the full automation tax. Industry baselines published by BLS establish labor-to-revenue norms by sector.
 
 Historical parallel: corporate income tax hasn't stopped companies from pursuing profits. The automation tax won't stop them from pursuing efficiency.
 
@@ -171,6 +175,8 @@ See the Transition Plan document for year-by-year implementation details.
 ## 17. "The disabled veteran gets less under this system."
 
 **Response:** VA disability compensation is service-connected injury compensation. It's not welfare and it's not replaced by UBI. James (Persona 2) receives $25K UBI + $40K VA disability = $65K total — up from ~$37K under the current system. The framework explicitly preserves VA benefits as a separate program.
+
+More broadly: the income floor does not replace disability benefits (SSDI), Medicaid, or any specialized care program. Individuals receiving disability support continue receiving those benefits in addition to the floor. The floor replaces only general income support programs (SNAP, TANF, SSI) that provide less than $25,000 annually — all recipients are made whole or better off.
 
 Service-connected disability is in a different moral category from income support. The nation owes its veterans specifically — that obligation doesn't disappear because a universal floor exists.
 

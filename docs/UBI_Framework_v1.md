@@ -44,7 +44,9 @@ Everyone is eligible. The phase-out is mechanical and based on earnings, not mea
 
 ### Floor Scaling
 
-The floor launches at $25,000 and scales toward $30,000 as the automation tax base grows. Every $1,000 increase in the floor costs approximately $230 billion. The 10-year growth trajectory projects the system reaching surplus by Year 10, at which point the floor can scale to $28,000–$30,000. The system tells you when it can afford more — no guesswork required.
+The income floor does not replace disability benefits (SSDI), Medicaid, or specialized care programs — those continue unchanged. The floor replaces only general income support programs (SNAP, TANF, SSI) that provide less than $25,000 annually; all recipients are made whole or better off.
+
+The floor launches at $25,000 and scales toward $30,000 as the automation tax base grows. Every $1,000 increase in the floor costs approximately $230 billion. The 10-year growth trajectory projects the system reaching surplus by Year 10 (56% probability per extended Monte Carlo simulation; 80% by Year 20), at which point the floor can scale to $28,000–$30,000. The system tells you when it can afford more — no guesswork required.
 
 The floor is also the system's built-in fraud prevention: when people aren't desperate, they don't need to game the system. Trust starts here.
 

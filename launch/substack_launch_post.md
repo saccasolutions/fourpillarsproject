@@ -36,7 +36,7 @@ The gap: $2.13 trillion. That's $830 billion more than the current federal defic
 
 The automation tax is designed to grow. As AI displaces more human labor — from 10% of tasks today to an estimated 30% over the next decade — automation tax revenue grows from $710 billion to $2.84 trillion. That $2.13 trillion increase alone closes the gap. Add GDP growth from 258 million adults with guaranteed purchasing power, and the system reaches surplus.
 
-I didn't trust this trajectory on paper, so I ran a Monte Carlo simulation — 2,000 iterations with randomized GDP growth, recession shocks, variable automation rates, volatile investment income, and fluctuating healthcare costs. The result: median budget gap narrows from -$1.97T in Year 1 to -$0.55T by Year 10, with a 34% probability of surplus. At the 90th percentile, surplus arrives by Year 6.
+I didn't trust this trajectory on paper, so I ran a Monte Carlo simulation — 2,000 iterations with randomized GDP growth, recession shocks, variable automation rates, volatile investment income, and fluctuating healthcare costs. The result: median budget gap narrows from -$1.97T in Year 1 to -$0.55T by Year 10, with a 56% probability of surplus. At the 90th percentile, surplus arrives by Year 6.
 
 The worst case — 10th percentile, bad luck all around — shows a Year 10 gap of -$1.75T. That's larger than today's deficit but not catastrophically so, and it's *still structurally better* than the current trajectory because the automation tax growth engine exists. The current system doesn't have one.
 

@@ -84,40 +84,73 @@ function calculate(income, filingStatus, numChildren, hasEmployerInsurance, crea
 function HeroSection({ onCalculatorClick }) {
   return (
     <div className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white">
-      <div className="max-w-6xl mx-auto px-6 py-20">
-        <div className="max-w-3xl">
-          <p className="text-lg text-blue-300 mb-4 font-semibold uppercase tracking-wide">
-            The problem
-          </p>
+      <div className="max-w-6xl mx-auto px-6 py-16 pb-8">
+        <div className="text-center max-w-4xl mx-auto mb-12">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-            84% of federal revenue comes from taxing human labor. AI is replacing that labor.
+            The Four Pillars Project
           </h1>
-          <p className="text-2xl text-blue-200 mb-4 font-light">
-            The Four Pillars — A New American Economic Framework
+          <p className="text-xl md:text-2xl text-blue-200 font-light max-w-3xl mx-auto">
+            A complete economic framework that values every kind of contribution — not just a paycheck.
           </p>
-          <p className="text-lg text-slate-300 mb-8 leading-relaxed max-w-2xl">
-            Tax automation instead of labor. Eliminate income tax. Guarantee every citizen
-            a $25,000 floor. Replace Social Security with personal investment accounts you own.
-            Full federal balance sheet, Monte Carlo validated, open source.
-          </p>
-          <div className="flex flex-wrap gap-4">
-            <button
-              onClick={onCalculatorClick}
-              className="bg-blue-500 hover:bg-blue-400 text-white px-8 py-4 rounded-lg text-lg font-semibold flex items-center gap-2 transition-colors"
-            >
-              <Calculator className="w-5 h-5" />
-              What does this mean for me?
-            </button>
-            <a
-              href="https://github.com/saccasolutions/fourpillarsproject"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border border-slate-500 hover:border-slate-300 text-slate-200 px-8 py-4 rounded-lg text-lg font-semibold flex items-center gap-2 transition-colors"
-            >
-              <BookOpen className="w-5 h-5" />
-              Read the Whitepaper
-            </a>
+        </div>
+
+        {/* The Four Pillars — front and center */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+          <div className="bg-white/10 backdrop-blur rounded-xl p-5 text-center border border-blue-400/20">
+            <Building2 className="w-8 h-8 text-blue-400 mx-auto mb-3" />
+            <h3 className="text-lg font-bold text-white mb-1">Economic</h3>
+            <p className="text-sm text-blue-200">Your salary — tax free. Keep 100% of your paycheck.</p>
           </div>
+          <div className="bg-white/10 backdrop-blur rounded-xl p-5 text-center border border-purple-400/20">
+            <Palette className="w-8 h-8 text-purple-400 mx-auto mb-3" />
+            <h3 className="text-lg font-bold text-white mb-1">Creative</h3>
+            <p className="text-sm text-purple-200">Arts, music, writing, innovation. $3K–$15K/year.</p>
+          </div>
+          <div className="bg-white/10 backdrop-blur rounded-xl p-5 text-center border border-green-400/20">
+            <Users className="w-8 h-8 text-green-400 mx-auto mb-3" />
+            <h3 className="text-lg font-bold text-white mb-1">Civic</h3>
+            <p className="text-sm text-green-200">Volunteering, mentoring, community. $2.5K–$14K/year.</p>
+          </div>
+          <div className="bg-white/10 backdrop-blur rounded-xl p-5 text-center border border-rose-400/20">
+            <Heart className="w-8 h-8 text-rose-400 mx-auto mb-3" />
+            <h3 className="text-lg font-bold text-white mb-1">Family</h3>
+            <p className="text-sm text-rose-200">Raising kids, caregiving. $6K–$15K/year.</p>
+          </div>
+        </div>
+
+        {/* The problem + what it does */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+          <div className="bg-white/5 rounded-xl p-6 border border-slate-700">
+            <p className="text-xs font-semibold text-red-400 uppercase tracking-wide mb-2">The Problem</p>
+            <p className="text-slate-300 leading-relaxed">
+              84% of federal revenue comes from taxing human labor. AI is replacing that labor. Social Security hits insolvency by 2033. The current system has no fix.
+            </p>
+          </div>
+          <div className="bg-white/5 rounded-xl p-6 border border-slate-700">
+            <p className="text-xs font-semibold text-green-400 uppercase tracking-wide mb-2">The Framework</p>
+            <p className="text-slate-300 leading-relaxed">
+              Eliminate income tax. Tax automation instead. A $25K floor plus pillar payments — a median worker takes home <span className="text-white font-semibold">$55,500</span> vs $34,050 today. Open source, Monte Carlo validated.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-wrap gap-4 justify-center">
+          <button
+            onClick={onCalculatorClick}
+            className="bg-blue-500 hover:bg-blue-400 text-white px-8 py-4 rounded-lg text-lg font-semibold flex items-center gap-2 transition-colors"
+          >
+            <Calculator className="w-5 h-5" />
+            What does this mean for me?
+          </button>
+          <a
+            href="https://github.com/saccasolutions/fourpillarsproject"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border border-slate-500 hover:border-slate-300 text-slate-200 px-8 py-4 rounded-lg text-lg font-semibold flex items-center gap-2 transition-colors"
+          >
+            <BookOpen className="w-5 h-5" />
+            Read the Whitepaper
+          </a>
         </div>
       </div>
     </div>
@@ -146,7 +179,7 @@ function StatsRow() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <StatCard icon={DollarSign} value="$25,000" label="Income Floor" sub="Per adult, per year" />
           <StatCard icon={Users} value="0%" label="Income Tax" sub="Keep 100% of your paycheck" />
-          <StatCard icon={TrendingUp} value="34%" label="Surplus by Yr 10" sub="Monte Carlo probability" />
+          <StatCard icon={TrendingUp} value="56%" label="Surplus by Yr 10" sub="Monte Carlo probability" />
           <StatCard icon={Shield} value="$1.2M+" label="Retirement" sub="Min wage worker, age 65" />
         </div>
       </div>
@@ -173,36 +206,45 @@ function PillarCard({ icon: Icon, title, description, color }) {
 function PillarsSection() {
   return (
     <div className="max-w-6xl mx-auto px-6 py-16">
-      <h2 className="text-3xl font-bold text-slate-900 mb-3">Four Dimensions of Contribution</h2>
-      <p className="text-lg text-slate-500 mb-10 max-w-2xl">
-        The framework recognizes that value comes in many forms — not just a paycheck.
+      <h2 className="text-3xl font-bold text-slate-900 mb-3">How the Pillars Stack Up</h2>
+      <p className="text-lg text-slate-500 mb-4 max-w-3xl">
+        The $25K floor is just the foundation. Pillar payments stack on top of your tax-free earnings. Here's what real scenarios look like:
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <PillarCard
-          icon={Building2}
-          title="Economic"
-          description="Your market salary, paid by employers. The GDP Growth Factor tracks whether wages keep pace with productivity. Zero government cost."
-          color="blue"
-        />
-        <PillarCard
-          icon={Palette}
-          title="Creative"
-          description="Arts, music, innovation, spiritual leadership. Three tiers from $3K to $15K/year. A permanent micro-grant for every American creator."
-          color="purple"
-        />
-        <PillarCard
-          icon={Users}
-          title="Civic"
-          description="Volunteering, community organizing, mentoring, public service. $2.5K to $14K/year based on hours and impact. Your community work has value."
-          color="green"
-        />
-        <PillarCard
-          icon={Heart}
-          title="Family"
-          description="Raising children, caring for elderly or disabled family members. $6K to $15K/year. Caregiving is work — the framework treats it that way."
-          color="rose"
-        />
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+        <div className="bg-blue-50 rounded-xl p-6 border border-blue-200">
+          <p className="text-sm font-semibold text-blue-600 mb-2">Stay-at-home parent, 2 kids, volunteers weekends</p>
+          <div className="space-y-1 text-sm text-slate-600">
+            <p>Floor: <span className="font-semibold text-green-700">+$25,000</span></p>
+            <p>Family (Pillar 4): <span className="font-semibold text-green-700">+$10,000</span></p>
+            <p>Civic (Pillar 3): <span className="font-semibold text-green-700">+$2,500</span></p>
+          </div>
+          <p className="text-xl font-bold text-slate-900 mt-3 pt-3 border-t border-blue-200">$37,500/year</p>
+          <p className="text-xs text-slate-500">Current system: $0</p>
+        </div>
+        <div className="bg-green-50 rounded-xl p-6 border border-green-200">
+          <p className="text-sm font-semibold text-green-600 mb-2">Median worker ($45K), coaches little league</p>
+          <div className="space-y-1 text-sm text-slate-600">
+            <p>Salary (no tax): <span className="font-semibold">$45,000</span></p>
+            <p>Floor: <span className="font-semibold text-green-700">+$17,500</span></p>
+            <p>Civic (Pillar 3): <span className="font-semibold text-green-700">+$2,500</span></p>
+            <p>VAT: <span className="font-semibold text-red-600">−$7,700</span></p>
+          </div>
+          <p className="text-xl font-bold text-slate-900 mt-3 pt-3 border-t border-green-200">$57,300/year</p>
+          <p className="text-xs text-slate-500">Current system: $34,050</p>
+        </div>
+        <div className="bg-purple-50 rounded-xl p-6 border border-purple-200">
+          <p className="text-sm font-semibold text-purple-600 mb-2">Freelance artist ($20K), active creator</p>
+          <div className="space-y-1 text-sm text-slate-600">
+            <p>Salary (no tax): <span className="font-semibold">$20,000</span></p>
+            <p>Floor: <span className="font-semibold text-green-700">+$25,000</span></p>
+            <p>Creative (Pillar 2): <span className="font-semibold text-green-700">+$8,000</span></p>
+            <p>VAT: <span className="font-semibold text-red-600">−$5,180</span></p>
+          </div>
+          <p className="text-xl font-bold text-slate-900 mt-3 pt-3 border-t border-purple-200">$47,820/year</p>
+          <p className="text-xs text-slate-500">Current system: $15,530</p>
+        </div>
       </div>
+      <p className="text-sm text-slate-500 text-center">Use the calculator above to see your personal scenario with all four pillars.</p>
     </div>
   );
 }
@@ -246,7 +288,7 @@ function ComparisonTable() {
         </div>
         <p className="text-slate-500 mt-8 text-sm max-w-2xl">
           The $830B additional gap closes through automation tax growth ($0.71T → $2.84T over 10 years)
-          and GDP expansion from consumer spending. Monte Carlo simulation: 34% probability of surplus by Year 10,
+          and GDP expansion from consumer spending. Monte Carlo simulation: 56% probability of surplus by Year 10, 80% by Year 20,
           90th percentile surplus by Year 6.
         </p>
       </div>
